@@ -4,8 +4,8 @@ pipeline {
   stages {
     stage('checkout stage') {
       steps {
-        sh 'rm -rf Ansible_project'
-        sh 'git clone https://github.com/88janu/grafana.git'
+        sh 'rm -rf grafana_ansible'
+        sh 'git clone https://github.com/88janu/grafana_ansible.git'
       }
     }
     stage('running playbook') {
