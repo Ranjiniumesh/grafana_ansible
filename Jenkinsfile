@@ -10,7 +10,7 @@ pipeline {
     }
     stage('running playbook') {
       steps {
-        sh 'ansible-playbook -i hosts graf.yml'
+        sh 'ansible-playbook -i hosts grafana.yml'
       }
     }
   }
